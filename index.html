@@ -1,0 +1,364 @@
+<!-- Alexander Vilchis — ITC Portfolio Website
+Designed and developed by Oscar Alexander Vilchis Soto (A01713207) for ITC coursework
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexander Vilchis Soto — ITC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="AlexWD.css">
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#" class="logo">
+    <span class="logo-bracket">[</span>AVS<span class="logo-bracket">]</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#projects" data-section="projects">proyectos</a></li>
+    <li><a href="#experience" data-section="experience">experiencia</a></li>
+    <li><a href="#skills" data-section="skills">habilidades</a></li>
+    <li><a href="#contact" data-section="contact">contacto</a></li>
+  </ul>
+  <button class="menu-btn" id="menuBtn" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-tag">
+      <span class="tag-dot"></span>
+      Disponible para prácticas &amp; freelance
+    </div>
+
+    <h1 class="hero-name">
+      Oscar<br>
+      <em>Alexander</em><br>
+      Vilchis <br>
+      Soto   <span class="cursor">_</span>
+    </h1>
+
+    <p class="hero-sub">
+      Estudiante de ITC en el Tec de Monterrey  Campus Qro.<br>
+      Me obsesionan el cómputo paralelo, las redes y construir productos que de verdad funcionan.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#projects" class="cta-main">ver proyectos</a>
+      <a href="mailto:oscaralex.vilchissoto@gmail.com
+" class="cta-ghost">escribirme</a>
+    </div>
+
+    <div class="hero-code">
+      <span class="code-comment">// resultados reales de TC2037</span><br>
+      <span class="code-key">const</span> speedUp = {<br>
+      &nbsp;&nbsp;<span class="code-prop">threads</span>: <span class="code-num">4.27</span>,<br>
+      &nbsp;&nbsp;<span class="code-prop">cuda</span>: <span class="code-num">30.35</span><br>
+      };
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="stat-card">
+      <span class="stat-label">SpeedUp CUDA</span>
+      <span class="stat-value" id="cudaCounter">0×</span>
+      <span class="stat-sub">32 bloques × 512 hilos</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">Proyectos ITC</span>
+      <span class="stat-value">6+</span>
+      <span class="stat-sub">TC2005B · TC2037 · Redes</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">Stack dominante</span>
+      <span class="stat-value mono-val">Node.js</span>
+      <span class="stat-sub">+ C++ · CUDA · React</span>
+    </div>
+    <div class="stat-card accent-card">
+      <span class="stat-label">Ubicación</span>
+      <span class="stat-value mono-val">QRO, MX</span>
+      <span class="stat-sub">Tec de Monterrey Campus Querétaro</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="section-head">
+    <span class="sec-num">01</span>
+    <h2>Proyectos</h2>
+  </div>
+
+  <div class="projects-grid">
+
+    <article class="pcard featured">
+      <div class="pcard-meta">
+        <span class="pcard-cat">TC2037 · Cómputo Paralelo</span>
+        <span class="pcard-year">2026</span>
+      </div>
+      <h3 class="pcard-title">Suma de primos — Sequential vs Threads vs CUDA</h3>
+      <p class="pcard-desc">
+        Tres implementaciones del mismo algoritmo: C++ puro, std::thread con 8 hilos y CUDA con 32×512. Resultados: secuencial 1977 ms → threads 464 ms → CUDA 65 ms. SpeedUp de 30× con GPU.
+      </p>
+      <div class="pcard-bottom">
+        <div class="pcard-tags">
+          <span>C++</span><span>CUDA</span><span>std::thread</span><span>HPC</span>
+        </div>
+        <div class="pcard-links">
+          <a href="#" class="plink">GH ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pcard">
+      <div class="pcard-meta">
+        <span class="pcard-cat">TC2005B · Mufasa Solutions</span>
+        <span class="pcard-year">2025</span>
+      </div>
+      <h3 class="pcard-title">SIGP — Gestión de proyectos para Change.org</h3>
+      <p class="pcard-desc">
+        Sistema interno con 5 roles RBAC, módulo de Goals e Highlights con IA (OpenAI + Zod), integración Slack, reportes PDF y filtrado AJAX. 11 de 17 CUs entregadas.
+      </p>
+      <div class="pcard-bottom">
+        <div class="pcard-tags">
+          <span>Node.js</span><span>MySQL</span><span>OpenAI</span><span>Slack API</span>
+        </div>
+        <div class="pcard-links">
+          <a href="#" class="plink">GH ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pcard">
+      <div class="pcard-meta">
+        <span class="pcard-cat">Freelance · Querétaro</span>
+        <span class="pcard-year">2026</span>
+      </div>
+      <h3 class="pcard-title">Peace Om Love Store — E-commerce artesanal</h3>
+      <p class="pcard-desc">
+        Tienda en línea para velas artesanales del centro histórico de QRO. Catálogo dinámico, carrito, checkout con MercadoPago y panel de administración.
+      </p>
+      <div class="pcard-bottom">
+        <div class="pcard-tags">
+          <span>React</span><span>TailwindCSS</span><span>MercadoPago</span><span>Express</span>
+        </div>
+        <div class="pcard-links">
+          <a href="#" class="plink">Demo ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pcard">
+      <div class="pcard-meta">
+        <span class="pcard-cat">Redes · Cisco Packet Tracer</span>
+        <span class="pcard-year">2026</span>
+      </div>
+      <h3 class="pcard-title">Infraestructura multi-VLAN — Bayer Querétaro</h3>
+      <p class="pcard-desc">
+        Propuesta de red para instalaciones de Bayer QRO. VLSM base-10, router-on-a-stick, APs outdoor IP67, DHCP relay y presupuesto ~300,000 MXN en equipo Cisco.
+      </p>
+      <div class="pcard-bottom">
+        <div class="pcard-tags">
+          <span>Cisco IOS</span><span>VLANs</span><span>VLSM</span><span>DHCP</span>
+        </div>
+        <div class="pcard-links">
+          <a href="#" class="plink">PT ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pcard">
+      <div class="pcard-meta">
+        <span class="pcard-cat">TC2005B · Lab</span>
+        <span class="pcard-year">2025</span>
+      </div>
+      <h3 class="pcard-title">Cartelera de películas — App MVC</h3>
+      <p class="pcard-desc">
+        Catálogo con búsqueda AJAX debounced, autenticación por sesión, subida de imágenes (Multer) y mapa de cines cercanos con Leaflet.js + OpenStreetMap / Nominatim.
+      </p>
+      <div class="pcard-bottom">
+        <div class="pcard-tags">
+          <span>Node.js</span><span>EJS</span><span>MySQL</span><span>Leaflet.js</span>
+        </div>
+        <div class="pcard-links">
+          <a href="#" class="plink">GH ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pcard">
+      <div class="pcard-meta">
+        <span class="pcard-cat">TC2037 · Funcional</span>
+        <span class="pcard-year">2025</span>
+      </div>
+      <h3 class="pcard-title">Validador DFA en Racket</h3>
+      <p class="pcard-desc">
+        Autómatas finitos deterministas en programación funcional pura. Define-lambda-cond, recursión con acumuladores (-aux), análisis de complejidad O(n×m×t).
+      </p>
+      <div class="pcard-bottom">
+        <div class="pcard-tags">
+          <span>Racket</span><span>DFA</span><span>Funcional</span><span>Autómatas</span>
+        </div>
+        <div class="pcard-links">
+          <a href="#" class="plink">GH ↗</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="section-head">
+    <span class="sec-num">02</span>
+    <h2>Experiencia</h2>
+  </div>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-date">2026 — presente</div>
+      <div class="tl-content">
+        <h3>Desarrollador web freelance</h3>
+        <span class="tl-org">Peace Om Love Store · Querétaro</span>
+        <p>Análisis de requerimientos, arquitectura y desarrollo completo de e-commerce para negocio local artesanal. Integración de MercadoPago y panel de inventario.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Ago — Dic 2025</div>
+      <div class="tl-content">
+        <h3>Back-end developer — Mufasa Solutions</h3>
+        <span class="tl-org">TC2005B · Tec MTY · Socio: Change.org</span>
+        <p>Módulo de Goals e Highlights con IA generativa (OpenAI + ai-sdk + Zod), filtrado AJAX, PDF reports y RBAC de 5 roles. Airbnb Style + Conventional Commits.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Ene — Jun 2026</div>
+      <div class="tl-content">
+        <h3>Cómputo paralelo y redes empresariales</h3>
+        <span class="tl-org">TC2037 & Redes · Tec MTY Campus Querétaro</span>
+        <p>Implementación de soluciones HPC con CUDA y std::thread. Diseño de infraestructura de red para escenarios reales (Bayer, COHAUS, Arena Borregos).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="section-head">
+    <span class="sec-num">03</span>
+    <h2>Habilidades</h2>
+  </div>
+
+  <div class="skills-wrap">
+    <div class="skill-col">
+      <div class="skill-group">
+        <h4>Lenguajes</h4>
+        <div class="chip-row">
+          <span>C++</span><span>JavaScript</span><span>Python</span>
+          <span>Racket</span><span>SQL</span><span>CUDA C</span><span>Bash</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Web &amp; Backend</h4>
+        <div class="chip-row">
+          <span>Node.js</span><span>Express</span><span>React</span>
+          <span>EJS</span><span>TailwindCSS</span><span>REST</span><span>MVC</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Datos &amp; DevOps</h4>
+        <div class="chip-row">
+          <span>MySQL</span><span>Git</span><span>Docker</span>
+          <span>PM2</span><span>Caddy</span><span>VPS/Linux</span>
+        </div>
+      </div>
+    </div>
+    <div class="skill-col">
+      <div class="skill-group">
+        <h4>IA &amp; APIs</h4>
+        <div class="chip-row">
+          <span>OpenAI API</span><span>Slack API</span><span>ai-sdk</span>
+          <span>Zod</span><span>Stripe</span><span>MercadoPago</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Redes &amp; HPC</h4>
+        <div class="chip-row">
+          <span>Cisco IOS</span><span>VLANs</span><span>VLSM</span>
+          <span>DHCP relay</span><span>CUDA</span><span>std::thread</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Metodologías</h4>
+        <div class="chip-row">
+          <span>Scrum</span><span>UML</span><span>Heumann Testing</span>
+          <span>Conventional Commits</span><span>Airbnb Style</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="section-head">
+    <span class="sec-num">04</span>
+    <h2>Contacto</h2>
+  </div>
+
+  <div class="contact-wrap">
+    <div class="contact-text">
+      <p>¿Tienes un proyecto en mente, una oferta de prácticas o simplemente quieres platicar sobre código? Con gusto te respondo.</p>
+      <div class="contact-links">
+        <a href="mailto:oscaralex.vilchissoto@gmail.com
+" class="clink">
+          <span class="clink-icon">✉</span>
+          <span>oscaralex.vilchissoto@gmail.com</span>
+        </a>
+        <a href="https://github.com/Oscar-AVS
+        " target="_blank" class="clink">
+          <span class="clink-icon">⌥</span>
+          <span>http://github.com/Oscar-AVS</span>
+        </a>
+        <a href="https://www.linkedin.com/in/oscar-alexander-vilchis-soto-7278373b0/?skipRedirect=true" target="_blank" class="clink">
+          <span class="clink-icon">in</span>
+          <span>linkedin.com </span>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <div class="field">
+        <label for="name">nombre</label>
+        <input type="text" id="name" placeholder="Tu nombre" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="email">correo</label>
+        <input type="email" id="email" placeholder="tu@correo.com">
+      </div>
+      <div class="field">
+        <label for="msg">mensaje</label>
+        <textarea id="msg" rows="4" placeholder="¿En qué puedo ayudarte?"></textarea>
+      </div>
+      <button type="submit" class="cta-main full">enviar →</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-id">Oscar Alexander Vilchis Soto · A01713207</span>
+  <span class="footer-school">ITC · Tec de Monterrey</span>
+  <span class="footer-year">2026</span>
+</footer>
+
+<script src="AlexWD.js"></script>
+</body>
+</html>
